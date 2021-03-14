@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title></title>
+       <meta charset="utf-8" />
+       <style type="text/css">
+       body{
+       margin:0px;
+       padding:0px;
+       height:1500px;
+       width:1500px;
+           background-image: url(image/jiji.jpg);
+           background-repeat: no-repeat;
+           background-size:120% 100%;
+       }
+       .main{
+       width:80%;
+       height:1450px;
+       margin:50px auto;
+       }
+       .header{
+       background-color:aqua;
+       height:150px;
+       border-radius:5px;
+       text-align:center;
+       padding:0px 0px 0px 0px;
+       font-size:54px;
+       font-family:cursive;
+       color:yellow;
+       font-weight:bold;
+       letter-spacing:10px;
+       }
+           .head h1{
+            position: absolute;
+            margin-left: 180px;
+               margin-top: -10px;
+           }
+           .logo{
+               float: left;
+               position: absolute;
+               margin-left: -80px;
+               margin-top: -80px;
+           }
+       .menu{
+       background-color:rgba(255,244,144,1);
+       height:50px;
+       border-radius:5px;
+       padding:4px 0px 4px 0px;
+       margin:15px 0px 2px 0px;  
+       }
+       ul{
+       list-style-type:none;
+       margin:0px;
+       padding:0px;
+       margin-left:400px;
+       }
+       .one > li{
+       display:inline;
+       padding:20px;
+       margin-top:-4px;
+       margin-right:30px;
+       float:left;
+       }
+       .one > li:hover{
+       background-color:rgba(255,155,130,0.5);
+       color:yellow;
+       }
+       li:hover .two li{
+       display:block;
+       margin:10px;
+       padding:10px;
+      
+       }
+       .two{
+       width:102px;
+       margin-top:20px;
+       margin-left:-20px;
+       background-color:rgba(255,244,144,1);
+       position:absolute;
+       z-index: 1;
+       }
+       .two li{
+       display:none;
+       width:72px;
+       color:black;
+           margin: 50px;
+       }
+       .two li:hover{
+       background-color:rgba(255,155,130,0.5);
+       color:yellow;
+       }
+       li{
+       font-family:tahoma;
+       font-weight:bold;
+       font-size:16px;
+       }
+       .content{
+       background-color:rgba(220,210,133,1);
+       height:1000px;
+       border-radius:5px;
+       padding:10px 10px 20px 10px;
+       margin:15px 0px 5px 0px;
+       }
+       .article1{
+       border:2px solid red;
+       width:500px;
+       margin-top:20px;
+       border-radius:5px;
+       padding:0px;
+       background-color:rgba(233,200,190,0.5);
+       text-align:center;
+       text-shadow:2px 2px 2px white;
+       }
+       .article2{
+       border:2px solid red;
+       width:500px;
+       margin-top:20px;
+       border-radius:5px;
+       padding:0px;
+       text-align:center;
+       background-color:rgba(233,200,190,0.5);
+       text-shadow:2px 2px 2px white;
+       }
+       .article3{
+       border:2px solid red;
+       width:500px;
+       margin-top:20px;
+       border-radius:5px;
+       padding:0px;
+       text-align:center;
+       background-color:rgba(233,200,190,0.5);
+       text-shadow:2px 2px 2px white;
+       }
+       .footer{
+       height:75px;
+       padding-top:40px;
+       background-color:lightgray;
+       border-radius:5px;
+       text-align:center;
+       font-weight:bold;
+       font-size:20px;
+       font-family:tahoma;
+           margin-top: 15px;
+       }
+           .foot{
+               height: 20px;
+               background-color:darkgray;
+               margin-top: 40px;
+               border-radius: 5px;
+               border-top-right-radius:0px;
+               border-top-left-radius: 0px;
+               padding: 10px;
+               font-family: tahoma,arial;
+               color: white;
+               font-size: 14px;
+           }
+       .article1 h1{
+       background-color:rgba(200,120,100,0.5);
+       padding:30px;
+       margin-top:0px;
+       letter-spacing:4px;
+           color: brown;
+       }
+       .article1 p{
+       word-spacing:10px;
+       font-weight:bold;
+           color:rosybrown;
+       }
+       .article2 h1{
+       background-color:rgba(200,120,100,0.5);
+       padding:30px;
+       margin-top:0px;
+       letter-spacing:4px;
+           color: brown;
+       }
+       .article2 p{
+       word-spacing:10px;
+       font-weight:bold;
+           color: rosybrown;
+       }
+       .article3 h1{
+       background-color:rgba(200,120,100,0.5);
+       padding:30px;
+       margin-top:0px;
+       letter-spacing:4px;
+           color:brown;
+       }
+       .article3 p{
+       word-spacing:10px;
+       font-weight:bold;
+           color: rosybrown;
+       }
+           .article1 pre{
+               font-weight: 800;
+           }
+             .article2 pre{
+               font-weight: 800;
+           }
+             .article3 pre{
+               font-weight: 800;
+           }
+       .present{
+       float:right;
+       width:500px;
+       height:520px;
+       border:2px solid red;
+       text-align:center;
+       padding:60px 10px;
+       background-color:rgba(200,120,100,0.5);
+       border-radius:5px;
+       margin-top:20px;
+       } 
+       .present p{
+       border:2px solid red;
+       border-left:none;
+       border-right:none;
+       margin-right:-10px;
+       margin-left:-10px;
+       font-weight:bold;
+       color:yellow;
+       opacity:0.5;
+       }
+       .present pre{
+       margin-top:80px;
+       line-height:30px;
+       font-weight:bold;
+       background-color:rgba(233,200,190,1);
+       margin-left:-10px;
+       margin-right:-10px;
+       direction:rtl;
+       padding:20px 10px 2px 10px;
+       text-shadow:2px 2px 2px white;
+       word-spacing:4px;
+       }
+       .present span{
+       color:white;
+       letter-spacing:1px;
+       font-style:italic;
+       }
+       .bottom{
+       border:2px solid red;
+       height:300px;
+       margin-top:20px;
+       border-radius:5px;
+       }
+       img{
+       border-radius:20px;
+       }
+       .font-end{
+       float:left;
+       border:1px solid red;
+       width:300px;
+       height:180px;
+       margin-top:10px;
+       margin-left:50px;
+       padding:10px
+       }
+       .back-end{
+       float:right;
+       border:1px solid red;
+       width:300px;
+       height:180px;
+       margin-top:10px;
+       margin-right:50px;
+       padding:10px;
+       }
+       .bottom h2{
+       text-align:center;
+       font-size:20px;
+       text-shadow:2px 2px 2px white;
+       }
+       .bottom hr{
+       color:black;
+       box-shadow:1px 1px 1px blue;
+       width:140px;
+       }
+       .back{
+       direction:rtl;
+       background-color:rgba(250,200,190,0.5);
+       padding:20px;
+       margin-top:-14px;
+       margin-left:-10px;
+       margin-right:-10px;
+           padding: 30px;
+       text-shadow:1px 1px 0.5px white;
+       }
+       .front{
+       direction:rtl;
+       background-color:rgba(250,200,190,0.5);
+       padding:10px;
+       margin-top:-14px;
+       margin-left:-10px;
+       margin-right:-10px;
+       text-shadow:1px 1px 0.5px white;
+           padding: 22px;
+       }
+       .bottom span{
+       font-weight:bold;
+       background-color: burlywood;
+       color: brown;
+       }
+       .bottom h2{
+        letter-spacing: 2px;
+        }
+       .bottom h1{
+       font-size:20px;
+       text-shadow:2px 2px 2px white;
+       background-color:rgba(200,120,100,0.5);
+       margin-left:-10px;
+       margin-right:-10px;
+       margin-top:-10px;
+       padding:30px;
+       color: brown;
+       }
+           .bottom p{
+               font-weight:600;
+           }
+           .men{
+               float: right;
+               margin-right: 80px;
+               margin-top: -10px;
+               color: white;
+           }
+           .icone{
+               float: left;
+               margin-top:-30px;
+               padding: 10px;
+               cursor: pointer;
+               
+           }
+       </style>
+   </head>
+   <body>
+       <div class="main">
+         <div class="header">
+           <div class="logo">
+               <img src="image/logo.png" width="300" height="200">
+           </div>
+             <div class="head">
+                  <h1>Web Designing</h1>
+             </div>
+         </div>
+         <nav class="menu">
+             <ul class="one">
+                  <li>اتصل بنا</li>
+                   <li>كورسات
+                     <ul class="two">
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>JS</li>
+                     </ul>
+                 </li>
+                 <li>من نحن</li>
+                 <li>صفحة الرئيسية</li>   
+             </ul>
+         </nav>
+         <div class="content">
+         <div class="present">
+         <p><marquee>Welcome To My Web Site Des.com</marquee></p>
+         <pre>مرحبا بكم في موقعي رسمي الدي سنتطرق فيه الى لغات برمجية اساسية في بناء
+          صفحات وهي عرضتها لكم الان بشكل مختصر
+         ثم سنتعرف على HTML5 و CSS3
+         وهناك مفاجأة اخرى تنتظركم
+         فمرحبا بكم مرة اخرى
+         وشكرا
+         </pre>
+         <img src="image/Karim.jpg" width="300px" height="150px"/><br>
+         <span>www.Des.com</span>
+         </div>
+         <div class="article1">
+         <h1>HTML</h1>
+         <p>Hyper Text Markup Language</p>
+         <pre>تسمى لغة هيكلية او وصفية فهي تصف صفحة وشكلها
+
+         </pre>
+         </div>
+         <div class="article2">
+         <h1>CSS</h1>
+         <p>Cascading StyleSheet</p>
+         <pre>تسمى لغة تزيين فهي التي تعطي جمالية  لصفحة من الوان واشياء اخرى</pre>
+         </div>
+         <div class="article3">
+         <h1>JS</h1>
+         <p>Java Scripts</p>
+         <pre>تسمى لغة ديناميكية و تفاعلية فهي التي تعطي لصفحة روح اي حركية </pre>
+         </div>
+         <div class="bottom">
+         <h2>مراحل تعلم</h2>
+         <hr/>
+         <div class="font-end">
+         <h1>Part 1 : Web Designer</h1>
+         <p class="front">
+         <span>Front End : </span> وهي تعلم كيف تصمم موقعك وهو الذي يرى للمستخدم و بتالي لغات مستعملة هي  HTML و CSS و JS وقد تحتاج مكتبة JQuery و Bootstrap
+         </p>
+         </div>
+         <div class="back-end">
+         <h1>Part 2 : Web Developer</h1>
+         <p class="back">
+        <span> Back End : </span> وهي تعلم معالجة بيانات وحفضها والتي لا ترى للمستخدم وبتالي لغات مستعملة هي PHP و MySql
+         </p>
+         </div>
+         </div>
+         </div>
+         <div class="footer">
+                <div class="icone">
+                    <abbr title="email"><img src="image/email-outline.png" width="50px" height="50px"/></abbr>
+                    <abbr title="facebook"><img src="image/facebook-outline.png"width="50px" height="50px"/></abbr>
+                    <abbr title="twitter"><img src="image/twitter-outline.png"width="50px" height="50px"/></abbr>
+                    <abbr title="wifi"><img src="image/wifi-outline.png"width="50px" height="50px"/></abbr>
+             </div>
+                <div class="men">Home  |  About  |  Gallery  |  Contact Us</div>
+             <div class="foot">
+                  Copyright &copy 2019 All right reserved Team
+             </div>
+         </div>
+       </div>
+   </body>
+</html>
